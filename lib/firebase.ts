@@ -1,23 +1,20 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getDatabase } from "firebase/database"; // Import Realtime Database
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDcef9zNK_4t7RIgghpAnanc048HKg1mZw",
-  authDomain: "hand-cricket-7cf10.firebaseapp.com",
-  projectId: "hand-cricket-7cf10",
-  storageBucket: "hand-cricket-7cf10.firebasestorage.app",
-  messagingSenderId: "15004749703",
-  appId: "1:15004749703:web:228439259e01f5af8ecd22",
-  measurementId: "G-4DRTDR2LJS"
+  apiKey: "AIzaSyAfR2ilodCVSSQbSz1HhYwREfXpbqLz6So",
+  authDomain: "hand-cricket-b9e4c.firebaseapp.com",
+  projectId: "hand-cricket-b9e4c",
+  storageBucket: "hand-cricket-b9e4c.appspot.com", // Fixed typo (firebasestorage.app -> appspot.com)
+  messagingSenderId: "879539357076",
+  appId: "1:879539357076:web:57ebc670755d84277ffb81",
+  measurementId: "G-MKBML2XEKW"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
+const database = getDatabase(app); // Initialize Realtime Database
 
 export { database };
